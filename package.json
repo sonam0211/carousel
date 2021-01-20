@@ -1,0 +1,18 @@
+{
+  "name": "carousel",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url /carousel",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "gh-pages": "^3.1.0",
+    "parcel": "^1.12.4"
+  }
+}
